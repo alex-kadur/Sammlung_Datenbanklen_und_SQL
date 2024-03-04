@@ -1,1 +1,1 @@
-# Sammlung_Datenbanklen_und_SQL
+# Sammlung: Datenbanklen und SQL
