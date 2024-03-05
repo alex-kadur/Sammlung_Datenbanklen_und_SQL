@@ -14,7 +14,7 @@ CREATE TABLE Abteilung
   Firma_ID INT(11) NOT NULL,
   Abteilung_Bezeichnung VARCHAR(255) NOT NULL,
   PRIMARY KEY(Abteilung_ID),
-  FOREIGN KEY(Firma_ID) REFERENCES Firma(Firma_ID),
+  FOREIGN KEY(Firma_ID) REFERENCES Firma(Firma_ID)
 );
 
 CREATE TABLE Person
@@ -24,7 +24,7 @@ CREATE TABLE Person
   Person_Vorname VARCHAR(255) NOT NULL,
   Person_Nachname VARCHAR(255) NOT NULL,
   PRIMARY KEY(Person_ID),
-  FOREIGN KEY(Abteilung_ID) REFERENCES Abteilung(Abteilung_ID),
+  FOREIGN KEY(Abteilung_ID) REFERENCES Abteilung(Abteilung_ID)
 );
 
 ALTER TABLE Firma ADD Person_ID INT(11) NOT NULL;
