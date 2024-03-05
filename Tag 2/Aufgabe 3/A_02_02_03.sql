@@ -46,5 +46,5 @@ ALTER TABLE Ort ADD Anzahl_Einwohner INT(11) NOT NULL; # c3
 
 ALTER TABLE Postbote DROP Postbote_Vorname; # c4
 
-ALTER TABLE Postbote ADD geboren_in_Ort_ID INT(11) NOT NULL; # c5
-ALTER TABLE Postbote ADD FOREIGN KEY(geboren_in_Ort_ID) REFERENCES Ort(Stadt_ID);
+ALTER TABLE Postbote ADD Ort_ID INT(11) NOT NULL; # c5
+ALTER TABLE Postbote ADD FOREIGN KEY(Ort_ID) REFERENCES Ort(Stadt_ID);
