@@ -48,8 +48,3 @@ ALTER TABLE Postbote DROP Postbote_Vorname; # c4
 
 ALTER TABLE Postbote ADD Ort_ID INT(11) NOT NULL; # c5
 ALTER TABLE Postbote ADD FOREIGN KEY(Ort_ID) REFERENCES Ort(Ort_ID);
-
-
-
-
-
