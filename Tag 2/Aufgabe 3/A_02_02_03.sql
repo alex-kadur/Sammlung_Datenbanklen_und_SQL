@@ -36,4 +36,20 @@ CREATE TABLE Strasse
     FOREIGN KEY(Postbote_ID) REFERENCES Postbote(Postbote_ID)
 );
 
+/*----------*/
+
+ALTER TABLE Stadt RENAME Ort; # c1
+
+ALTER TABLE Stadt_Name CHANGE Ort_Name; # c2
+
+ALTER TABLE Ort ADD Anzahl_Einwohner INT(11) NOT NULL; # c3
+
+ALTER TABLE Postbote DROP Postbote_Vorname; # c4
+
+ALTER TABLE Postbote ADD Ort_ID INT(11) NOT NULL; # c5
+Alter TABLE Postbote ADD FOREIGN KEY(Ort_ID) REFERENCES Ort(Ort_ID);
+
+
+
+
 
