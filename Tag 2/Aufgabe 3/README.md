@@ -16,10 +16,11 @@ Aufgabenstellung:
 
 a)	Erstellen Sie hierzu bitte ein entsprechendes RDB-Schema in der 3. Normalform.<br>
 b)	Implementieren Sie bitte das Schema auf ihrem Rechner.<br>
-c)	Erstellen Sie bitte für folgende Aufgaben die entsprechenden SQL-Anweisungen:<br>
-  (1)	Ändern Sie bitte den Tabellennamen von „Stadt“ zu „Ort“.<br>
-  (2)	Ändern Sie bitte den Attributnamen „Stadt_Name“ in „Ort_Name“<br>
-  (3)	Fügen Sie bitte zur Tabelle „Ort“ das Attribut „Anzahl_Einwohner“ hinzu.<br>
-  (4)	Löschen Sie bitte das Attribut Vorname aus der Tabelle „Postbote“.<br>
-  (5)	Ergänzen Sie bitte die Datenbank durch die Beziehung „ist Geburtsstadt von“ zwischen den Tabellen Postbote und Ort.<br>
+c)	Erstellen Sie bitte für folgende Aufgaben die entsprechenden SQL-Anweisungen:
+
+(1)	Ändern Sie bitte den Tabellennamen von „Stadt“ zu „Ort“.<br>
+(2)	Ändern Sie bitte den Attributnamen „Stadt_Name“ in „Ort_Name“<br>
+(3)	Fügen Sie bitte zur Tabelle „Ort“ das Attribut „Anzahl_Einwohner“ hinzu.<br>
+(4)	Löschen Sie bitte das Attribut Vorname aus der Tabelle „Postbote“.<br>
+(5)	Ergänzen Sie bitte die Datenbank durch die Beziehung „ist Geburtsstadt von“ zwischen den Tabellen Postbote und Ort.<br>
 
