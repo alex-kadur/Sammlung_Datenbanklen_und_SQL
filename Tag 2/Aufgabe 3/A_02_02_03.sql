@@ -13,7 +13,7 @@ CREATE TABLE Stadtteil
     Stadtteil_ID INT(11) AUTO_INCREMENT,
     Stadt_ID INT(11) NOT NULL,
     Stadtteil_Name VARCHAR(255) NOT NULL,
-    PRIMARY KEY(Stadt_ID),
+    PRIMARY KEY(Stadtteil_ID),
     FOREIGN KEY(Stadt_ID) REFERENCES Stadt(Stadt_ID)
 );
 
@@ -22,7 +22,7 @@ CREATE TABLE Postbote
     Postbote_ID INT(11) AUTO_INCREMENT,
     Postbote_Vorname VARCHAR(255) NOT NULL,
     Postbote_Nachname VARCHAR(255) NOT NULL,
-    PRIMARY KEY(Stadt_ID)
+    PRIMARY KEY(Postbote_ID)
 );
 
 CREATE TABLE Strasse
@@ -32,7 +32,7 @@ CREATE TABLE Strasse
     Postbote_ID INT(11) NOT NULL,
     Strasse_Name VARCHAR(255) NOT NULL,
     PRIMARY KEY(Strasse_ID),
-    FOREIGN KEY(Stadtteil_ID) REFERENCES Stadtteil(Stadtteil_ID)
+    FOREIGN KEY(Stadtteil_ID) REFERENCES Stadtteil(Stadtteil_ID),
     FOREIGN KEY(Postbote_ID) REFERENCES Postbote(Postbote_ID)
 );
 
