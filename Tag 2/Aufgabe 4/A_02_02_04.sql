@@ -52,3 +52,43 @@ CREATE TABLE Medikament_Krankheit
     FOREIGN KEY(Medikament_ID) REFERENCES Medikament(Medikament_ID),
     FOREIGN KEY(Krankheit_ID) REFERENCES Krankheit(Krankheit_ID)
 );
+
+/*----------*/
+
+CREATE TABLE Mitarbeiter_Krankheit
+(
+    Mitarbeiter_ID INT(11) NOT NULL,
+    Krankheit_ID INT(11) NOT NULL,
+    FOREIGN KEY(Mitarbeiter_ID) REFERENCES Mitarbeiter(Mitarbeiter_ID),
+    FOREIGN KEY(Krankheit_ID) REFERENCES Krankheit(Krankheit_ID)
+);
+
+CREATE TABLE Hersteller
+(
+    Hersteller_ID INT(11) AUTO_INCREMENT,
+    Hersteller_PLZ VARCHAR(255) NOT NULL,
+    Hersteller_Ort VARCHAR(255) NOT NULL,
+    Hersteller_Strasse VARCHAR(255) NOT NULL,
+    Hersteller_Hausnummer VARCHAR(255) NOT NULL,
+    Hersteller_Name VARCHAR(255) NOT NULL,
+    PRIMARY KEY(Hersteller_ID)
+);
+
+CREATE TABLE Medikament_Hersteller
+(
+    Medikament_ID INT(11) NOT NULL,
+    Hersteller_ID INT(11) NOT NULL,
+    FOREIGN KEY(Medikament_ID) REFERENCES Medikament(Medikament_ID),
+    FOREIGN KEY(Hersteller_ID) REFERENCES Hersteller(Hersteller_ID)
+);
+
+ALTER TABLE Mitarbeiter DROP FOREIGN KEY Filiale_ibfk1;
+ALTER TABLE Mitarbeiter DROP Filiale_ID;
+
+CREATE TABLE Mitarbeiter_Filiale
+(
+    Mitarbeiter_ID INT(11) NOT NULL,
+    Filiale_ID INT(11) NOT NULL,
+    FOREIGN KEY(Mitarbeiter_ID) REFERENCES Mitarbeiter(Mitarbeiter_ID),
+    FOREIGN KEY(Filiale_ID) REFERENCES Filiale(Filiale_ID)
+);
