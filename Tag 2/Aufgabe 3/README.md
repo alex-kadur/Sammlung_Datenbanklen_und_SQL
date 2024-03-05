@@ -12,8 +12,6 @@ Jeder Straße ist ein eindeutiger Postbote zugeordnet.
 
 ## Aufgabenstellung:
 
-Aufgabenstellung:
-
 a)	Erstellen Sie hierzu bitte ein entsprechendes RDB-Schema in der 3. Normalform.<br>
 b)	Implementieren Sie bitte das Schema auf ihrem Rechner.<br>
 c)	Erstellen Sie bitte für folgende Aufgaben die entsprechenden SQL-Anweisungen:
