@@ -82,7 +82,7 @@ CREATE TABLE Medikament_Hersteller
     FOREIGN KEY(Hersteller_ID) REFERENCES Hersteller(Hersteller_ID)
 );
 
-ALTER TABLE Mitarbeiter DROP FOREIGN KEY Filiale_ibfk1;
+ALTER TABLE Mitarbeiter DROP FOREIGN KEY Mitarbeiter_ibfk1;
 ALTER TABLE Mitarbeiter DROP Filiale_ID;
 
 CREATE TABLE Mitarbeiter_Filiale
