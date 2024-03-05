@@ -45,7 +45,7 @@ CREATE TABLE Marke # d
     PRIMARY KEY(Marke_ID)
 );
 
-ALTER TABLE Firmenwagen ADD Marke_ID INT(11) NOT NULL; #e
+ALTER TABLE Firmenwagen ADD Marke_ID INT(11) NOT NULL; # e
 ALTER TABLE Firmenwagen ADD FOREIGN KEY(Marke_ID) REFERENCES Marke(Marke_ID);
 
 ALTER TABLE Firmenwagen CHANGE Kennzeichen Kfz_Zeichen VARCHAR(255) NOT NULL; # f
@@ -54,7 +54,7 @@ ALTER TABLE Mitarbeiter RENAME Kollege; # g
 
 ALTER TABLE Kollege CHANGE Nachname Familienname VARCHAR(30) NULL; # h
 
-ALTER TABLE Kollege DROP FOREIGN KEY Kollege_ibfk_2;
+ALTER TABLE Kollege DROP FOREIGN KEY Kollege_ibfk_2; # i
 ALTER TABLE Kollege DROP Firmenwagen_ID;
 
 
