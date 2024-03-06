@@ -2,10 +2,9 @@
 
 ---
 
+## Aufgabenstellung
 
 Nutzen Sie bitte die Musterlösung ML_02_01_01 mit der Sie die leere Datenbank „Geld_her“ implementieren können.
-
-## Aufgabenstellung
 
 Bearbeiten Sie bitte die heutigen Lerninhalte an Hand der folgenden Aufgabenstellungen und Zusatzfragen:
 
