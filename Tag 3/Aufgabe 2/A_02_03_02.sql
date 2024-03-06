@@ -2,11 +2,11 @@ INSERT INTO Kunde(Vorname, Nachname, Email)
 VALUES
 ("Elli", "Rot" , "rot@xyz.de"),
 ("Vera", "Deise" , "deise@xyz.de"),
-("Witali", "Mymow" , "@xyz.de"),
-("Rita", "Mymow" , "@xyz.de"),
-("Eva", "Hahn" , "@xyz.de"),
-("Gala", "Nieda" , "@xyz.de"),
-("Peter", "Kaufnix" , "@xyz.de");
+("Witali", "Mymow" , "myr@xyz.de"),
+("Rita", "Mymow" , "myr@xyz.de"),
+("Eva", "Hahn" , "ehahn@xyz.de"),
+("Gala", "Nieda" , "gala@xyz.de"),
+("Peter", "Kaufnix" , "nix@xyz.de");
 
 INSERT INTO Abrechnung(Kunde_ID, Datum)
 VALUES
