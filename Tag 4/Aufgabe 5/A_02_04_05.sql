@@ -56,4 +56,18 @@ VALUES(1, 1), (2, 1), (3, 1), (2, 2), (3, 2);
 
 /*----------*/
 
+# (1)
+DELETE FROM Person
+WHERE Nachname = "Baumann" AND NOT Geburtsjahr > 1970;
 
+# (2)
+DELETE FROM Person
+WHERE NOT Ort = "Aachen" AND NOT Geburtsjahr > 1981;
+
+#(3)
+DELETE FROM Lied
+WHERE Erscheinungsjahr = 2000 AND Person_ID < 10;
+
+#(4)
+DELETE FROM Person_Lied
+WHERE Person_ID < 10 AND Lied_ID < 10;
