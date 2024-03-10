@@ -1,5 +1,3 @@
-﻿#Musterlösung zu A_02_04_03
-
 #a)	
 Breite<15 OR Laenge<15;
 
