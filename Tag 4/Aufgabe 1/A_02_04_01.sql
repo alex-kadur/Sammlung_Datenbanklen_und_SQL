@@ -1,6 +1,3 @@
-# Musterlösung zu A_02_04_01
-
-
 #a)
 id>3 AND id<9
 
