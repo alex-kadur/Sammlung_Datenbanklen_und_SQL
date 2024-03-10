@@ -1,8 +1,5 @@
-# Musterlösung zu FPA_02_04_01_bis_03(c)
-
-
-CREATE DATABASE FPA_02_04_01_bis_03_c;
-USE FPA_02_04_01_bis_03_c;
+CREATE DATABASE A_02_04_05;
+USE A_02_04_05;
 
 CREATE TABLE Person
 (
@@ -10,7 +7,7 @@ CREATE TABLE Person
     Vorname VARCHAR(255) NOT NULL,
     Nachname VARCHAR(255) NOT NULL,
     Geburtsjahr INT(11) NOT NULL,
-	Strasse VARCHAR(255) NOT NULL,
+    Strasse VARCHAR(255) NOT NULL,
     Hausnummer VARCHAR(255) NOT NULL,
     PLZ INT(11) NOT NULL,
     Ort VARCHAR(255) NOT NULL,
@@ -32,3 +29,6 @@ CREATE TABLE Person_Lied
     FOREIGN KEY(Person_ID) REFERENCES Person(Person_ID),
     FOREIGN KEY(Lied_ID) REFERENCES Lied(Lied_ID)
 );
+
+/*----------*/
+
