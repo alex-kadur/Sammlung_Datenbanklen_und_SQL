@@ -33,4 +33,4 @@ WHERE NOT (Ort = “Bochum“ OR Ort = “Berlin“) AND Preis > 5000);
 
 #i)
 DELETE FROM Grundstuecke
-WHERE ID > Breite AND Preis > 100 AND Preis > Laenge AND NOT (Besitzer = “Mustermann“ OR Ort = “Kiel“)
+WHERE ID > Breite AND Preis > 100 AND Preis > Laenge AND NOT (Besitzer = “Mustermann“ OR Ort = “Kiel“);
