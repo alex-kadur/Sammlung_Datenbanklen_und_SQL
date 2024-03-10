@@ -1,6 +1,3 @@
-#Musterlösung zu A_02_04_02
-
-
 #a)	
 ps>100 AND baujahr<1990;
 
