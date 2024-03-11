@@ -22,8 +22,7 @@ ORDER BY Kunde_ID, Datum DESC;
 # f)
 SELECT Vorname, Nachname FROM Kunde
 WHERE NOT Vorname = "Pietro" AND NOT Vorname = "Peter"
-ORDER BY Kunde_ID DESC
-LIMIT 2, 3;
+ORDER BY Kunde_ID DESC LIMIT 2, 3;
 
 # g)
 SELECT DISTINCT Hersteller_ID FROM Produkt
