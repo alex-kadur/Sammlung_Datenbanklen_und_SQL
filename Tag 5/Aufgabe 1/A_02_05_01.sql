@@ -16,9 +16,7 @@ WHERE Datum > "2021-05-31" AND Datum < "2022-06-01";
 
 # e)
 SELECT * FROM Kunde
-ORDER BY Kunde_ID
-DESC
-LIMIT 2, 4;
+ORDER BY Kunde_ID DESC LIMIT 2, 4;
 
 # f)
 SELECT DISTINCT Kunde_ID FROM Abrechnung
