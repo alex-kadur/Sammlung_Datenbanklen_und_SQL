@@ -10,7 +10,7 @@ ORDER BY Herstller_ID, Produkt_Name LIMIT 2, 10;
 
 # c)
 SELECT * FROM Abrechnung
-WHERE Datum >= 2021-11-01 AND Datum <= 2021-11-30
+WHERE Datum >= "2021-11-01" AND Datum <= "2021-11-30"
 ORDER BY Kunde_ID DESC, Datum LIMIT 10;
 
 # d)
