@@ -20,4 +20,4 @@ ORDER BY Produkt_ID;
 
 # e)
 SELECT * From Produkt
-ORDER BY Euro_Preis LIMIT 100, 3;
+ORDER BY Euro_Preis DESC LIMIT 100, 3;
