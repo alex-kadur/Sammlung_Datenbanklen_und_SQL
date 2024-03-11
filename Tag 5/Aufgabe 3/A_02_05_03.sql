@@ -1,6 +1,6 @@
 # a)
 SELECT * FROM Produkt
-WHERE ID > 1 AND (Euro_Preis > 20 AND Euro_Preis < 50)
+WHERE ID > 1 AND Euro_Preis > 20 AND Euro_Preis < 50
 ORDER BY Herstller_ID, Euro_Preis DESC
 LIMIT 2, 3;
 
