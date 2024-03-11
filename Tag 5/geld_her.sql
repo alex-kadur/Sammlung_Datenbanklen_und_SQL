@@ -1,4 +1,4 @@
-#Datenbank zu Aufgaben 05_01
+#Datenbank zu Aufgaben A_03_01_
 
 CREATE DATABASE Geld_her;
 USE Geld_her;
