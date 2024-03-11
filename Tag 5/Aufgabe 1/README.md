@@ -15,4 +15,4 @@ Wir nutzen die Datenbank "geld_her".
 - e)	Kunden nach ID absteigend sortiert. Allerdings sollen die beiden ersten Kunden übersprungen und nur die 4 darauffolgenden Kunden ausgegeben werden.
 - f)	Alle Kunden-IDs von Kunden, die bereits eine Abrechnung in Auftrag gaben (bzw. die Website besuchten). Falls jedoch einem Kunden mehrere Abrechnungen zugeordnet werden können, so soll diese Kunden-ID nur 1-mal erscheinen. Ausgabe sortiert nach Kunden-ID aufsteigend.
 
-(*) Falls keine expliziten Attribute angesprochen werden, sollen alle ausgegeben werden.
+- (*) Falls keine expliziten Attribute angesprochen werden, sollen alle ausgegeben werden.
