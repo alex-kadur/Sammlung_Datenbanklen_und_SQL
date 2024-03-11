@@ -1,4 +1,4 @@
-#Musterlösung zu A_02_01_01
+#Datenbank zu Aufgaben 05_01
 
 CREATE DATABASE Geld_her;
 USE Geld_her;
