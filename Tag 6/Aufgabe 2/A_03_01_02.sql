@@ -8,7 +8,7 @@ AND kunde.Kunde_ID = abrechnung.Kunde_ID;
 SELECT DISTINCT Spedition_Name
 FROM spedition, hersteller, produkt
 WHERE Produkt_Name = "solver premium"
-AND spedition.Spedition_ID = herstelelr.Spedition_ID
+AND spedition.Spedition_ID = hersteller.Spedition_ID
 AND hersteller.Hersteller_ID = produkt.Hersteller_ID;
 
 # c)
@@ -31,7 +31,7 @@ SELECT DISTINCT Spedition_Name
 FROM spedition, hersteller, produkt, abrechnung_produkt
 WHERE (Euro_Preis >= 10 AND Euro_Preis <= 1000)
 AND spedition.Spedition_ID = hersteller.Spedition_ID
-AND hersteller.HErsteller_ID = produkt.Hersteller_ID
+AND hersteller.Hersteller_ID = produkt.Hersteller_ID
 AND produkt.Produkt_ID = abrechnung_produkt.Produkt_ID
 ORDER BY Spedition_Name;
 
