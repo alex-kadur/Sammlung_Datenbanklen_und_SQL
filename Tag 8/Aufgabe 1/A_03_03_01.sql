@@ -27,13 +27,13 @@ ORDER BY COUNT(Produkt_ID) DESC, Nachname;
 SELECT Hersteller_Name, COUNT(Produkt_ID)
 FROM hersteller, produkt
 WHERE hersteller.Hersteller_ID = produkt.Hersteller_ID
-GROUP BY Hersteller_ID  
+GROUP BY hersteller.Hersteller_ID  
 ORDER BY COUNT(Produkt_ID) DESC;
 
 # f)
 SELECT Produkt_Name, COUNT(produkt.Produkt_ID)
 FROM abrechnung_produkt, produkt
 WHERE abrechnung_produkt.Produkt_ID = produkt.Produkt_ID
-GROUP BY Produkt_ID
+GROUP BY produkt.Produkt_ID
 ORDER BY COUNT(produkt.Produkt_ID) DESC LIMIT 3;
 
