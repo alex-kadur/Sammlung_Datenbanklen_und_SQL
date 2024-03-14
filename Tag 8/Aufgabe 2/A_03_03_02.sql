@@ -29,5 +29,5 @@ SELECT Abrechnung_ID, MAX(Euro_Preis)
 FROM abrechnung_produkt, produkt
 WHERE abrechnung_produkt.Produkt_ID = produkt.Produkt_ID  
 GROUP BY Abrechnung_ID
-HAVING MAX(Euro_Preis) >=30
+HAVING MAX(Euro_Preis) >= 30
 ORDER BY MAX(Euro_Preis) DESC, Abrechnung_ID;
