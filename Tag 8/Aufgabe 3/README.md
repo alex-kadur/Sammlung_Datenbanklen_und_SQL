@@ -2,7 +2,7 @@
 
 ---
 
-Formulieren Sie bitte entsprechende SQL-Anweisungen für folgende Aufgabestellungen: 
+## Formulieren Sie bitte entsprechende SQL-Anweisungen für folgende Aufgabestellungen: 
 
 - a)	Anzahl der Abrechnungen von Witali Myrnow im Jahr 2021.
 - b)	Gesamteinnahme von „Geld_her“ im November 2021. Es sollen aber nur Waren berücksichtigt werden, die nicht von Kunden 2 gekauft wurden, da dieser bisher noch nicht gezahlt hat.
