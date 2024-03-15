@@ -19,15 +19,16 @@ GROUP BY kunde.Kunde_ID;
 # c) gleichzeitige Ausgabe von Herstellern ohne Bestelleungen NOV21 und ausschliesslich Bestellungen Datum NOV21 nach aktuellem Kenntnisstand moeglich?
 
 SELECT hersteller.Hersteller_ID, Hersteller_Name, COUNT(abrechnung_produkt.Produkt_ID)
-FROM hersteller
-LEFT JOIN produkt
-ON hersteller.Hersteller_ID = produkt.Hersteller_ID
-LEFT JOIN abrechnung_produkt
+FROM abrechnung
+INNER JOIN abrechnung_produkt
+ON abrechnung_produkt.Abrechnung_ID = abrechnung.Abrechnung_ID
+AND abrechnung.Datum > "2021-11-01" AND abrechnung.Datum < "2021-11-30"
+RIGHT JOIN produkt
 ON produkt.Produkt_ID = abrechnung_produkt.Produkt_ID
-LEFT JOIN abrechnung
-ON abrechnung_produkt.Abrechnung_ID = abrechnung.Abrechnung_ID 
-WHERE abrechnung.Datum > "2021-11-01" AND abrechnung.Datum < "2021-11-30"
-GROUP BY hersteller.Hersteller_ID;
+RIGHT JOIN hersteller  
+ON hersteller.Hersteller_ID = produkt.Hersteller_ID
+GROUP BY hersteller.Hersteller_ID
+ORDER BY COUNT(abrechnung_produkt.Produkt_ID) DESC;
 
 # d)
 SELECT abrechnung.Abrechnung_ID, Datum, COUNT(abrechnung_produkt.Produkt_ID)
