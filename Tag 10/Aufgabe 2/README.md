@@ -11,5 +11,5 @@
 - e) Es sollen alle Abrechnungen (ID, Datum, Anzahl der bestellten Produkte) ausgegeben werden, bei denen mehr Produkte bestellt wurden, als Contrabit bei „Geld_her“ Produkte im Sortiment hat.
 - f) Es sollen all jene Speditionen (ID, Name und Anzahl der transportierten Produkte) ausgegeben werden, die jeweils mehr Produkte transportierten als Kunde 3 bisher bestellte. Ausgabe alphabetisch nach Speditionsname sortiert.
 
-- (*) Zur Erinnerung (siehe auch: V_02_01, Folie 10)
+- (*) Zur Erinnerung (siehe auch: V_02_01, Folie 10):
 - Ein Kunde kann die Seite von „Geld_her“ besuchen, OHNE etwas zu bestellen. Dennoch wird ihm bei jedem Besuch bereits eine Abrechnungs-ID zugewiesen. Beispiel: Peter Kaufnix (7) besuchte die Seite von „Geld_her“ und erhielt hierbei die Abrechnungs-ID 10. In der Hilfstabelle findet sich aber kein einziger Datensatz mit dieser Abrechnungs-ID, denn Peter Kaufnix besuchte die Seite zwar, bestellte aber nichts.
