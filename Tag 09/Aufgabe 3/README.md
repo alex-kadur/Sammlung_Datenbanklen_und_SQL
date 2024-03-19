@@ -8,10 +8,7 @@ Verwenden Sie bitte die Datenbank aus dem Dokument A_03_04_X.sql.
 
 Formulieren Sie bitte die folgenden SQL-Anweisungen: 
 
-- a) Die Datensätze aus Student_Studienfach und die Datensätze aus Student_Prüfung sollen unter den gemeinsamen Überschriften „Fremdschlüsselwert 1“ und „Fremdschlüsselwert 2“ in einer einzigen Tabelle ausgegeben werden.
-- b) Es soll zukünftig möglich sein, einzelne Studenten zu löschen. Dies soll unter Wahrung der Referentiellen Integrität geschehen. Dabei sollen jedoch keine Entitäten gelöscht werden, die sich auf den zu löschenden Studenten beziehen. Allerdings soll dieser Bezug anonymisiert werden. Hinweise:
-  - (1) Beachten Sie bitte, dass ein Primärschlüsselwert Default-mäßig NOT NULL ist (was dann auch für alle Attribute eines zusammengesetzten Primärschlüssels gilt.)
-  - (2) Die (zusammengesetzte) Primärschlüssel-Eigenschaft in „Student_Pruefung“ kann mittels ALTER TABLE Student_Pruefung DROP PRIMARY KEY gelöscht werden.
-  - (3) Löschen Sie bitte zuerst die für diese Aufgabe relevanten Fremdschlüsselbeziehungen und erst anschließend die angesprochene Primärschlüssel-Eigenschaft.
-- c)  Für jeden Studenten (Vorname und Nachname) sollen alle Prüfungen (Name des Studienfachs und Datum) ausgegeben werden. Dies soll aber auch für Studenten gelten, die bisher keine Prüfung absolvierten und ebenso für Prüfungen, die bisher von keinem Studenten belegt worden sind.
-- d) Ändern Sie bitte die Struktur der Datenbank dahingehend das folgendes gilt: Wenn eine bestimmte Prüfung gelöscht wird, so werden auch alle Datensätze gelöscht, die sich auf diese Prüfung beziehen.
+- a) Für jeden Studenten soll ID, Vorname, Nachname und die Anzahl der von ihm belegten Studienfächer ausgegeben werden. Ausgabe nach Anzahl absteigend sortiert. Die Formulierung „Für jeden (Studenten) …“ macht deutlich, dass auch Studenten ausgegeben werden sollen, denen die Anzahl „0“ zugeordnet wird. Daher können wir für alle folgenden Aufgaben auf entsprechende Hinweise verzichten. 
+- b) Für jede Prüfung soll die ID, das Datum und die Anzahl der Teilnehmer ausgegeben werden. Ausgabe chronologisch nach Datum sortiert.
+- c) Für jedes Studienfach soll dessen ID, seine Bezeichnung und die Anzahl der Prüfungen ausgegeben werden, die zu diesem Fach bisher abgehalten wurden. Ausgabe nach Anzahl numerisch sortiert.
+- d) Für jeden Studenten soll ID, Vorname, Nachname und die Anzahl der von ihm bestanden Prüfungen ausgegeben werden. Ausgabe alphabetisch bzgl. Nachnamen sortiert. Es sollen aber nur Prüfungen gezählt werden, in denen mindestens die Note 4 erreicht wurde. Ferner sollen nur Studenten berücksichtigt werden, deren (aktuelle) Durchschnittsnote besser als 4 ist. 
