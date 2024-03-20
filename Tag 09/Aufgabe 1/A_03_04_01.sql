@@ -16,8 +16,7 @@ LEFT JOIN produkt
 ON abrechnung_produkt.Produkt_ID = produkt.Produkt_ID AND Euro_Preis < 80 # falls Bedingung nicht erfuellt; nicht verknuepft und mit NULL aufgefuellt
 GROUP BY kunde.Kunde_ID;
 
-# c) gleichzeitige Ausgabe von Herstellern ohne Bestelleungen NOV21 und ausschliesslich Bestellungen Datum NOV21 nach aktuellem Kenntnisstand moeglich?
-
+# c)
 SELECT hersteller.Hersteller_ID, Hersteller_Name, COUNT(abrechnung_produkt.Produkt_ID)
 FROM abrechnung
 INNER JOIN abrechnung_produkt
