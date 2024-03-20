@@ -102,6 +102,7 @@ FROM hersteller;
 SELECT COUNT(Produkt_ID)
 FROM abrechnung_produkt;
 
+# f)
 SELECT Hersteller_Name, COUNT(abrechnung_produkt.Produkt_ID)
 FROM abrechnung_produkt, produkt, hersteller
 WHERE abrechnung_produkt.Produkt_ID = produkt.Produkt_ID
