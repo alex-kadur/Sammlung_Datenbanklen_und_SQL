@@ -112,4 +112,13 @@ SELECT spedition.Spedition_ID, Spedition_Name, COUNT(abrechnung_produkt.Produkt_
 FROM abrechnung_produkt, produkt, hersteller, spedition
 WHERE abrechnung_produkt.Produkt_ID = produkt.Produkt_ID
 AND produkt.Hersteller_ID = hersteller.Hersteller_ID
-AND hersteller.Spedition_ID
+AND hersteller.Spedition_ID = spedition.Spedition_ID
+GROUP BY spedition.Spedition_ID
+HAVING COUNT(abrechnung_produkt.Produkt_ID) >
+(
+  SELECT COUNT(Produkt_ID)
+  FROM abrechnung, produkt
+  WHERE abrechnung.Abrechnung_ID = abrechnung_produkt.Abrechung_ID
+  AND Kunde_ID = 3;
+)
+ORDER BY Spedition_Name;
